@@ -21,6 +21,10 @@ L.tileLayer('https://stamen-tiles-{s}.a.ssl.fastly.net/toner/{z}/{x}/{y}.png',
 	{maxZoom: 19
 }).addTo(myMap);
 
+L.tileLayer('https://mapwarper.net/maps/tile/60665/{z}/{x}/{y}.png',
+  {maxZoom: 19}
+).addTo(myMap);
+
 // load a GeoJSON from external file
 $.getJSON("point-data.geojson", function(data) {
   // add GeoJSON layer to the map once the file is loaded
