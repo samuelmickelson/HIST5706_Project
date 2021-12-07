@@ -25,6 +25,8 @@ L.tileLayer('https://mapwarper.net/maps/tile/60665/{z}/{x}/{y}.png',
   {maxZoom: 19}
 ).addTo(myMap);
 
+L.marker(45.420687473311716, -75.72106651323864)
+
 // load a GeoJSON from external file
 $.getJSON("point-data.geojson", function(data) {
   // add GeoJSON layer to the map once the file is loaded
